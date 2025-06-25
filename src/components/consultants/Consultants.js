@@ -17,7 +17,7 @@ const DoctorDetailsModal = ({ doctor, onClose, onBookAppointment }) => {
     };
     
     const handleViewDocument = () => {
-        window.open(`/document/${doctor.FirstName}_${doctor.LastName}`, '_blank');
+        window.open(`https://mediconnetbackend.onrender.com/uploads/${doctor.docs}`, "_blank", "noreferrer");
     };
     
     return (
