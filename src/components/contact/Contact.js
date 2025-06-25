@@ -26,7 +26,7 @@ const Contact = () => {
                     setUserLocation({ latitude, longitude });
                     
                     // Update map URL to show nearby hospitals
-                    const newMapUrl = `https://www.google.com/maps/embed/v1/search?key=${process.env.api_key}=hospitals+near+${latitude},${longitude}&zoom=14`;
+                    const newMapUrl = "https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d243647.31694923654!2d78.24437042343439!3d17.412348814327997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1shospitals%20hyderabad!5e0!3m2!1sen!2sin!4v1640995200000!5m2!1sen!2sin";
                     setMapUrl(newMapUrl);
                 },
                 (error) => {
