@@ -26,7 +26,7 @@ const Contact = () => {
                     setUserLocation({ latitude, longitude });
                     
                     // Update map URL to show nearby hospitals
-                    const newMapUrl = `https://www.google.com/maps/embed/v1/search?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hospitals+near+${latitude},${longitude}&zoom=14`;
+                    const newMapUrl = `https://www.google.com/maps/embed/v1/search?key=${process.env.api_key}=hospitals+near+${latitude},${longitude}&zoom=14`;
                     setMapUrl(newMapUrl);
                 },
                 (error) => {
